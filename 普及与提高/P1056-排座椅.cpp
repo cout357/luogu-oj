@@ -5,6 +5,7 @@ using namespace std;
 
 int kRow[1005];
 int lRow[1005];
+
 int main(){
 	int row,col,k,l,d;			//行，列，横向，纵向，说话对数 
 	int x1,y1,x2,y2;
@@ -27,7 +28,7 @@ int main(){
 		ks[i] = maxk;
 		kRow[maxk] = 0;
 	}
-	for(int i = 0;i < l;i++){
+	for(int i = 0;i < l;i++){		//这两个排序基本一致，可以做成函数 
 		maxl = 1;
 		for(int j = 1;j <= col;j++){
 			if(lRow[j]>lRow[maxl])maxl = j;
